@@ -1,0 +1,1 @@
+define(["uiComponent","Magento_Checkout/js/model/payment/renderer-list"],function(a,b){b.push({type:"dholi_payments_payu_boleto",component:"Dholi_PayUBr/js/view/payment/method-renderer/boleto-method"});return a.extend({})});

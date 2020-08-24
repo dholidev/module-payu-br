@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job name="dholi_payment_payu_boleto_cancel_expires" instance="Dholi\PayUBr\Cron\CancelExpiredBoleto" method="execute">
+			<schedule>0/45 * * * *</schedule>
+		</job>
+	</group>
+</config>

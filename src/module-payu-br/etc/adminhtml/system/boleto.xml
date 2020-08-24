@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+	<group id="dholi_payments_payu_boleto" translate="label" type="text" sortOrder="1012" showInDefault="1" showInWebsite="1" showInStore="1">
+		<label>PayU - Boleto Settings</label>
+		<field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Enabled</label>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<config_path>payment/dholi_payments_payu_boleto/active</config_path>
+		</field>
+		<field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label>Title</label>
+			<frontend_class>required-entry</frontend_class>
+			<config_path>payment/dholi_payments_payu_boleto/title</config_path>
+		</field>
+		<field id="allowspecific" translate="label" type="allowspecific" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Payment from Applicable Countries</label>
+			<source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+			<config_path>payment/dholi_payments_payu_boleto/allowspecific</config_path>
+		</field>
+		<field id="specificcountry" translate="label" type="multiselect" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Payment from Specific Countries</label>
+			<source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+			<config_path>payment/dholi_payments_payu_boleto/specificcountry</config_path>
+			<can_be_empty>1</can_be_empty>
+		</field>
+		<field id="expiration" translate="label tooltip" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Expiration Days</label>
+			<frontend_class>required-entry validate-number</frontend_class>
+			<config_path>payment/dholi_payments_payu_boleto/expiration</config_path>
+			<tooltip>In days</tooltip>
+		</field>
+		<field id="instructions" translate="label" type="textarea" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Instructions</label>
+			<config_path>payment/dholi_payments_payu_boleto/instructions</config_path>
+		</field>
+		<field id="cancellation" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Cancellation Option</label>
+			<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+		</field>
+		<field id="cancelable" translate="label" type="select" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Cancel orders automatically?</label>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<config_path>payment/dholi_payments_payu_boleto/cancelable</config_path>
+		</field>
+		<field id="cancel_on_thursday" translate="label tooltip" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Shopping on Thursday</label>
+			<frontend_class>required-entry validate-number</frontend_class>
+			<config_path>payment/dholi_payments_payu_boleto/cancel_on_thursday</config_path>
+			<tooltip>Deadline In days</tooltip>
+			<depends>
+				<field id="cancel">1</field>
+			</depends>
+		</field>
+		<field id="cancel_on_friday" translate="label tooltip" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Shopping on Friday</label>
+			<frontend_class>required-entry validate-number</frontend_class>
+			<config_path>payment/dholi_payments_payu_boleto/cancel_on_friday</config_path>
+			<tooltip>Deadline In days</tooltip>
+			<depends>
+				<field id="cancel">1</field>
+			</depends>
+		</field>
+		<field id="cancel_on_saturday" translate="label tooltip" type="text" sortOrder="22" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Shopping on Saturday</label>
+			<frontend_class>required-entry validate-number</frontend_class>
+			<config_path>payment/dholi_payments_payu_boleto/cancel_on_saturday</config_path>
+			<tooltip>Deadline In days</tooltip>
+			<depends>
+				<field id="cancel">1</field>
+			</depends>
+		</field>
+		<field id="cancel_on_sunday" translate="label tooltip" type="text" sortOrder="23" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Shopping between Sunday and Wednesday</label>
+			<frontend_class>required-entry validate-number</frontend_class>
+			<config_path>payment/dholi_payments_payu_boleto/cancel_on_sunday</config_path>
+			<tooltip>Deadline In days</tooltip>
+			<depends>
+				<field id="cancel">1</field>
+			</depends>
+		</field>
+		<field id="min_order_total" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Minimum Order Total</label>
+			<config_path>payment/dholi_payments_payu_boleto/min_order_total</config_path>
+		</field>
+		<field id="max_order_total" translate="label" type="text" sortOrder="91" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Maximum Order Total</label>
+			<config_path>payment/dholi_payments_payu_boleto/max_order_total</config_path>
+		</field>
+		<field id="debug" translate="label" type="select" sortOrder="98" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Debug</label>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<config_path>payment/dholi_payments_payu_boleto/debug</config_path>
+		</field>
+		<field id="sort_order" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+			<label>Sort Order</label>
+			<config_path>payment/dholi_payments_payu_boleto/sort_order</config_path>
+			<frontend_class>required-entry validate-number</frontend_class>
+		</field>
+	</group>
+</include>

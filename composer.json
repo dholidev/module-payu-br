@@ -1,0 +1,43 @@
+{
+  "name": "dholi/module-payu-br",
+  "description": "PayU Brasil para Magento 2 (Open Source)",
+  "homepage": "https://www.dholi.dev/payu",
+  "keywords": [
+    "magento",
+    "magento 2",
+    "commerce",
+    "ecommerce",
+    "e-commerce",
+    "payu",
+    "payu brasil",
+    "payment",
+    "shop",
+    "dholi"
+  ],
+  "authors": [
+    {
+      "name": "dholi.dev",
+      "email": "comunidade@dholi.dev"
+    }
+  ],
+  "support": {
+    "email": "comunidade@dholi.dev"
+  },
+  "require": {
+    "php": "~7.3|~7.4",
+    "magento/framework": "103.0.*",
+    "dholi/module-payu": "dev-master"
+  },
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "src/module-payu-br/registration.php"
+    ],
+    "psr-4": {
+      "Dholi\\PayUBr\\": "src/module-payu-br"
+    }
+  }
+}
