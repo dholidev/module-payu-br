@@ -21,7 +21,8 @@
     }
   ],
   "support": {
-    "email": "comunidade@dholi.dev"
+    "email": "comunidade@dholi.dev",
+    "issues": "https://github.com/dholidev/module-payu-br/issues"
   },
   "require": {
     "php": "~7.3|~7.4",
