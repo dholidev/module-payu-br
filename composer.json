@@ -25,9 +25,9 @@
     "issues": "https://github.com/dholidev/module-payu-br/issues"
   },
   "require": {
-    "php": "~7.3|~7.4",
-    "magento/framework": "103.0.*",
-    "dholi/module-payu": "dev-master"
+    "php": "~7.2|~7.3|~7.4",
+    "magento/framework": "102.0.*|103.0.*",
+    "dholi/module-payu": "~1.0.0"
   },
   "license": [
     "OSL-3.0",
