@@ -17,6 +17,7 @@ namespace Dholi\PayUBr\Model\Ui\Boleto;
 
 use Dholi\PayUBr\Gateway\Config\Boleto\Config as BoletoConfig;
 use Magento\Checkout\Model\ConfigProviderInterface;
+use Magento\Framework\Escaper;
 use Magento\Framework\Session\SessionManagerInterface;
 
 class ConfigProvider implements ConfigProviderInterface {
@@ -30,7 +31,7 @@ class ConfigProvider implements ConfigProviderInterface {
 	protected $escaper;
 
 	public function __construct(SessionManagerInterface $session,
-	                            \Magento\Framework\Escaper $escaper,
+	                            Escaper $escaper,
 	                            BoletoConfig $boletoConfig) {
 		$this->session = $session;
 		$this->escaper = $escaper;

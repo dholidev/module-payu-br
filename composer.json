@@ -1,6 +1,6 @@
 {
   "name": "dholi/module-payu-br",
-  "description": "PayU Brasil para Magento 2 (Open Source)",
+  "description": "Processa pagamentos com cartões de crédito, tokenização e boleto bancário com PayU Brasil para Magento 2 (Open Source)",
   "homepage": "https://www.dholi.dev/payu",
   "keywords": [
     "magento",
