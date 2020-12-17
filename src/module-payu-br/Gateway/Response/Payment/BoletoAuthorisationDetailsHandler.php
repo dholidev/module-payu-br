@@ -47,7 +47,7 @@ class BoletoAuthorisationDetailsHandler implements HandlerInterface {
 		$payment->setLastTransId($transaction->transactionId);
 		$payment->setAdditionalInformation('payuOrderId', $transaction->orderId);
 		$payment->setAdditionalInformation('transactionId', $transaction->transactionId);
-		$payment->setAdditionalInformation('paymentLink', $transaction->extraParameters->URL_BOLETO_BANCARIO);
+		$payment->setAdditionalInformation('paymentLink', $transaction->extraParameters->URL_PAYMENT_RECEIPT_HTML);
 		$payment->setAdditionalInformation('pdfLink', $transaction->extraParameters->URL_PAYMENT_RECEIPT_PDF);
 		$payment->setAdditionalInformation('barCode', $transaction->extraParameters->BAR_CODE);
 
