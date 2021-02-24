@@ -2,7 +2,7 @@
 ## 26/02/2021
 
 1. [](#new)
-   * Versão inicial.
+   * Parcelamento para PayU Latam.
    
 # 1.0.0
 ## 24/08/2020
