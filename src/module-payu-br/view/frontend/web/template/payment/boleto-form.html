@@ -31,9 +31,12 @@
 			<div class="primary">
 				<button class="action primary checkout"
 				        type="submit"
-				        data-bind="click: placeOrder, attr: {title: placeOrderTotalOrderAmount}, css: {disabled:!isPlaceOrderActionAllowed()}, enable: (getCode() == isChecked())"
+				        data-bind="click: placeOrder,
+				                   attr: {title: placeOrderTotalOrderAmount},
+				                   css: {disabled:!isPlaceOrderActionAllowed()},
+				                   enable: (getCode() == isChecked())"
 				        disabled>
-					<span data-bind="text: placeOrderTotalOrderAmount"></span>
+					<span data-bind="i18n: 'Place Order'"></span>
 				</button>
 			</div>
 		</div>
