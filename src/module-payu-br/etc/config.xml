@@ -30,6 +30,7 @@
 				<cancel_on_friday>6</cancel_on_friday>
 				<cancel_on_saturday>5</cancel_on_saturday>
 				<cancel_on_sunday>4</cancel_on_sunday>
+				<min_order_total>15.00</min_order_total>
 				<sort_order>1</sort_order>
 			</dholi_payments_payu_boleto>
 		</payment>
